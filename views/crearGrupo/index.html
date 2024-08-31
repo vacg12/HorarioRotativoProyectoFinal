@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Grupos</title>
+</head>
+<body>
+
+    <div id="crearHorario"></div>  
+    <div id="infocreate" class="flex top-0 right-0 left-0"></div>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+<script>
+   const setup = () => {
+       return {
+       isSidebarOpen: false,
+       currentSidebarTab: null,
+       isSettingsPanelOpen: false,
+       isSubHeaderOpen: false,
+       watchScreen() {
+           if (window.innerWidth <= 1024) {
+           this.isSidebarOpen = false
+           }
+       },
+   }
+ }
+</script>
+
+
+
+<script src="../components/crearHorario.js"></script>
+ <script src="index.js"></script>
+
+
+</body>
+</html>

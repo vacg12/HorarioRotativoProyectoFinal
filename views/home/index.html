@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>ScheduleFlex</title>
+</head>
+<body>
+    <!-- barra de navegacion que se usara en todas las paginas -->
+     <nav id="navbar" class="fixed top-0 right-0 left-0 bg-teal-500 h-16"></nav>
+     
+     <div class="text-center pt-16 h-screen flex justify-center items-center flex-col md:flex-row lg:w-3/5 mx-auto px-4 gap-4 md:gap-8">
+        <h1 class="text-teal-500 font-bold text-4xl md:text-7xl text-center">ScheduleFlex</h1>
+
+        <div class="flex flex-col gap-5 md:text-lg">
+            <p class="text-justify">¡Crea tu horario flexible y rotativo de manera fácil y rápida con ScheduleFlex!</p>
+
+            <!-- aqui va lo que es el boton de login|registro del home -->
+            <div class="relative flex items-center justify-center">
+                <div class="absolute -inset-0 bg-gradient-to-r from-teal-400 to-teal-400 rounded-3xl blur-none"></div>
+                <button class="relative px-6 py-3 bg-teal-600 rounded-3xl leading-none flex items-center divide-x divide-teal-950">
+                    <span class="flex items-center space-x-1">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-teal-400 -rotate-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                     </svg>
+                          
+                    <a href="/login/" class="pr-6 font-semibold hover:text-teal-100 transition ease-in-out">Login</a> 
+                    </span>
+
+                    <a href="/signup/" class="pl-6 text-white font-semibold hover:text-teal-950 transition ease-in-out gap-2">Registro&rarr;</a>  
+                </button>
+            </div>
+        </div>
+     </div>
+     
+     <script src="/components/nav.js"></script>
+</body>
+</html>
