@@ -42,7 +42,7 @@ app.use('/crearGrupo', express.static(path.resolve('views', 'crearGrupo')));
 app.use('/verHorario', express.static(path.resolve('views', 'verHorario')));
 app.use('/imagen', express.static(path.resolve('imagen')));
 app.use('/components', express.static(path.resolve('views', 'components')));
-app.use('/verify/:id/:token', express.static(path.resolve('views', 'verify')));
+app.use('verify/:id/:token', express.static(path.resolve('views', 'verify')));
 
 
 //Rutas backend
