@@ -14,11 +14,12 @@ const scheduleRouter = require('./controllers/schedule');
 const turnosRouter = require('./controllers/turnos');
 const gruposRouter = require('./controllers/grupos');
 const signOutRouter = require('./controllers/signOut');
+const { MONGO_URL } = require('./config');
 
 ( async () => {
 
     try {
-        await mongoose.connect(process.env.MONGO_URL_TEST);
+        await mongoose.connect(MONGO_URL);
         console.log('conectado a Mongo DB');
     } catch (error) {
         console.log(error);
